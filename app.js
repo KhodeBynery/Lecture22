@@ -7,6 +7,7 @@ angular.module('ShoppingListApp', [])
 .config(Config);
 
 //The config function overrides the previous maximum
+//Config always runs before anything else
 Config.$inject = ['ShoppingListServiceProvider'];
 function Config(ShoppingListServiceProvider) {
   // Save Yaakov from himself
